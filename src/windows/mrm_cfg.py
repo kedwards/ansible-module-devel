@@ -8,7 +8,6 @@ ANSIBLE_METADATA = {'metadata_version': '1.0',
                     'status': ['stableinterface'],
                     'supported_by': 'MRM Team'}
 
-
 DOCUMENTATION = r'''
 ---
 module: mrm_cfg
@@ -20,7 +19,7 @@ options:
   src:
     description:
       - Alternate path to search for Openlink configuration files
-    default: 'D:\Openlink\Endur'
+    default: 'D:\\Openlink\\Endur'
   service:
     description:
       - Openlink Service to report on
@@ -37,15 +36,14 @@ EXAMPLES = r'''
 
 # Check configurations in an alternate folder
 - mrm_cfg:
-    src: D:\Openlink\Endur\AlternatePath
+    src: D:\\Openlink\\Endur\\AlternatePath
 
 # Check configurations for a specific service
 - mrm_cfg:
     svc: DailyDev
-	
+
 # Check configurations for a specific service stored in an alternate folder
 - mrm_cfg:
-    src: D:\Openlink\Endur\AlternatePath
-	svc: DailyDev	
+    src: D:\\Openlink\\Endur\\AlternatePath
+	svc: DailyDev
 '''
-
